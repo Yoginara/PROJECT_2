@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();
 
     // Navigasi ke status.html saat tombol submit ditekan
-    window.location.href = 'status.html';
+    window.location.href = 'Status_User.html';
   });
 });

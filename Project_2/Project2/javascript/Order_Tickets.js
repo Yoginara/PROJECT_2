@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('form');
   form.addEventListener('submit', function (event) {
     event.preventDefault(); // Menghentikan default behavior pengiriman form
-    window.location.href = 'form2.html'; // Mengarahkan ke form2.html setelah tombol submit ditekan
+    window.location.href = 'Pay_Tickets.html'; // Mengarahkan ke form2.html setelah tombol submit ditekan
   });
 });
 
@@ -79,23 +79,7 @@ updateDestinasi();
 document.querySelector('form').addEventListener('submit', function (event) {
   event.preventDefault(); // Menghentikan form dari pengiriman
 
-  // Simpan nilai inputBooking ke dalam localStorage
-  const inputBookingValue = document.getElementById('inputBooking').value;
-  localStorage.setItem('bookingCode', inputBookingValue);
-
-  // Pindahkan ke halaman form2.html
-  window.location.href = 'form2.html';
-});
-
-document.querySelector('form').addEventListener('submit', function (event) {
-  event.preventDefault(); // Menghentikan form dari pengiriman
-
-  // Simpan nilai inputBooking ke dalam localStorage
-  const inputBookingValue = document.getElementById('inputBooking').value;
-  localStorage.setItem('bookingCode', inputBookingValue);
-
-  // Pindahkan ke halaman form2.html
-  window.location.href = 'status.html';
+  window.location.href = 'Pay_Tickets.html';
 });
 
 document.querySelector('form').addEventListener('submit', function (event) {
@@ -113,5 +97,5 @@ document.querySelector('form').addEventListener('submit', function (event) {
   localStorage.setItem('tujuanWisata', inputTujuanValue);
 
   // Pindahkan ke halaman status.html
-  window.location.href = 'status.html';
+  window.location.href = 'Status_User.html';
 });
